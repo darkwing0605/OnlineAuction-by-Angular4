@@ -6,19 +6,57 @@
 
 - 使用 npm 安装依赖包
 
-- 运行 `nodemon build/auction_server` 启动服务器以及客户端，项目运行地址为 `127.0.0.1:4201`
+- 启动服务器以及客户端，项目运行地址为 `127.0.0.1:4200`
 
-- 如果服务器代码有更新，请编译后运行。手动编译运行命令 `tsc` ，自动编译请在个人 IDE 中自行设置
+	- 运行 `npm run start` 启动开发模式
+
+	- 运行 `npm run startProd` 启动生产模式
+
+- 代码热更新
+
+- 构建
+
+	-运行 `ng build` 构建开发模式
+
+	-运行 `ng build --env=prod` 构建生产模式
 
 ## 目录简介
-- build 编译后的服务器文件（不用看 hello_server.js ，那个是我随便写的，懒得删了）
+- (build) 如果构建项目将会出现在这个文件夹中
 
-- client 已经构建好的客户端（生产模式），如果需要看源码，请到 auction 分支
+- e2e 端对端测试，本项目中没有使用
 
-- server 未编译的服务器文件（同样也不用看 hello_server.ts ）
+- src 项目源码位置
 
-**Ps: 由于个人经济原因，暂不支持在线预览**
+	- app 就是这里了
 
-**Pss: 如果谁有什么办法将 nodeJS 服务器运行在 Pages 上，也欢迎联系我~**
+		- carousel 轮播图组件
+
+		- footer 底部组件
+
+		- home 主页组件
+
+		- navbar 导航组件
+
+		- pipe 管道
+
+		- product-detail 商品详情组件（包括评价以及关注组件）
+
+		- product 商品组件
+
+		- search 搜索组件
+
+		- shared product 服务以及 webSocket 服务
+
+		- stars 星级评价组件
+
+	- assets 静态资源目录，然而本项目图片都是在线的
+
+	- environments 环境配置
+
+**Ps: 本项目的关注后的出价系统为定时器，每两秒加个随机数，无上限**
+
+**Pss: 由于个人经济原因，暂不支持在线预览**
+
+**Psss: 如果谁有什么办法将  nodeJS 服务器运行在  Pages 上，也欢迎联系我~**
 
 *本项目部分参考 imooc ，图片均来源于网络，如有侵权请联系*
