@@ -16,9 +16,9 @@
 
 - 构建
 
-	-运行 `ng build` 构建开发模式
+	- 运行 `ng build` 构建开发模式
 
-	-运行 `ng build --env=prod` 构建生产模式
+	- 运行 `ng build --env=prod` 构建生产模式
 
 ## 目录简介
 - (build) 如果构建项目将会出现在这个文件夹中
